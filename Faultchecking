@@ -1,0 +1,47 @@
+def troubleshoot_computer():
+    print("Welcome to the Computer Troubleshooting Program!")
+    
+    # Check for power issues
+    power_issue = input("Is your computer not turning on? (yes/no): ").strip().lower()
+    if power_issue == "yes":
+        print("Troubleshooting Power Issues:")
+        print("1. Check if the power cable is plugged in.")
+        print("2. Ensure the power outlet is working.")
+        print("3. Try a different power cable.")
+        print("4. Check for signs of life (lights, sounds).")
+        return
+    
+    # Check for display issues
+    display_issue = input("Is your computer turning on but the display is not working? (yes/no): ").strip().lower()
+    if display_issue == "yes":
+        print("Troubleshooting Display Issues:")
+        print("1. Check if the monitor is plugged in and turned on.")
+        print("2. Verify that the video cable is securely connected.")
+        print("3. Try connecting to a different monitor.")
+        print("4. Adjust brightness settings on the monitor.")
+        return
+    
+    # Check for slow performance
+    performance_issue = input("Is your computer running slow? (yes/no): ").strip().lower()
+    if performance_issue == "yes":
+        print("Troubleshooting Performance Issues:")
+        print("1. Close unnecessary programs running in the background.")
+        print("2. Run a virus scan.")
+        print("3. Check for software updates.")
+        print("4. Consider upgrading RAM or storage.")
+        return
+    
+    # Check for connectivity issues
+    connectivity_issue = input("Are you having trouble connecting to the internet? (yes/no): ").strip().lower()
+    if connectivity_issue == "yes":
+        print("Troubleshooting Connectivity Issues:")
+        print("1. Check if your Wi-Fi is turned on.")
+        print("2. Restart your router.")
+        print("3. Forget and reconnect to the network.")
+        print("4. Check for any service outages in your area.")
+        return
+    
+    print("If you are experiencing other issues, please consult a professional technician.")
+
+if __name__ == "__main__":
+    troubleshoot_computer()
